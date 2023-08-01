@@ -15,7 +15,7 @@ export default function IntroSection() {
           <p className="text-8xl -indent-2 bg-gradient-to-r from-[#00158b] to-[#15c7ff] bg-clip-text text-transparent align-[50px] leading-snug">Rodrigo Lezama</p>
           <p className="text-5xl -indent-1">Full-Stack Web Developer</p>
         </div>
-        <div className="flex gap-10 items-center [&>a]:flex [&>a]:items-center [&>a]:gap-2 [&>a]:border-black [&>a]:border-solid [&>a]:border-[1px] [&>a]:rounded-lg [&>a]:py-2 [&>a]:px-4 [&>a]:text-[18px] [&>a]:bg-[#0c75ca] [&>a]:font-medium [&>a]:text-white hover:[&>a]:bg-[#2f4eff] [&>a]:shadow-[4px_4px_8px_rgba(0,0,0,0.8)]">
+        <div className="flex gap-10 items-center [&>a]:flex [&>a]:items-center [&>a]:gap-2 [&>a]:border-black [&>a]:border-solid [&>a]:border-[1px] [&>a]:rounded-lg [&>a]:py-2 [&>a]:px-4 [&>a]:text-[18px] [&>a]:bg-[#0c75ca] [&>a]:font-normal [&>a]:text-white hover:[&>a]:bg-[#2f4eff] [&>a]:shadow-[4px_4px_8px_rgba(0,0,0,0.6)]">
           <a
             href="RodrigoLezama-FullStackWebDeveloper.pdf"
             download="RodrigoLezama-Resume"
