@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import MessageSubmitBtn from "./messageSubmitBtn";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 export default function ContactForm() {
   const INITIAL_STATE = {
@@ -11,7 +12,7 @@ export default function ContactForm() {
     tel: "",
     subject: "",
     message: "",
-  }
+  };
 
   const [userForm, setUserForm] = useState(INITIAL_STATE);
 
@@ -26,18 +27,39 @@ export default function ContactForm() {
       .send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-        userForm, process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+        userForm,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       )
-      .then(
-        function (response) {
-          setUserForm(INITIAL_STATE)
-          console.log("SUCCESS!", response.status, response.text);
-        },
-        function (error) {
-          console.log("FAILED...", error);
-        }
-      );
-      
+      .then(function (response) {
+        response.status === 200 &&
+          Swal.fire({
+            position: "bottom-end",
+            icon: "success",
+            iconColor: "#6cc43a",
+            text: "Message send successfully!",
+            toast: true,
+            background: "#e6f5dd",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            color: "#6cc43a",
+            padding: "0.5rem",
+          }).then(setUserForm(INITIAL_STATE));
+        response.status === 400 &&
+          Swal.fire({
+            position: "bottom-end",
+            icon: "success",
+            iconColor: "#FF0000",
+            text: "Product deleted succesfully!",
+            toast: true,
+            background: "#FEEBEB",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            color: "#FF0000",
+            padding: "0.5rem",
+          });
+      });
   };
 
   return (

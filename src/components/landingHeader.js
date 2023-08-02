@@ -1,5 +1,9 @@
-"use client"
-export default function LandingHeader() {
+"use client";
+
+import Link from 'next-intl/link'
+
+export default function LandingHeader({home, projects, contact}) {
+  const changeLenguage = () => {};
 
   return (
     <header
@@ -14,20 +18,22 @@ export default function LandingHeader() {
         <ul className="flex">
           <li>
             <a className="py-3 px-5 font-bold" href="#intro">
-              Home
+             {home}
             </a>
           </li>
           <li>
             <a className="py-3 px-5 font-bold" href="#projects">
-              Projects
+              {projects}
             </a>
           </li>
           <li>
             <a className="py-3 px-5 font-bold" href="#contact">
-              Contact
+              {contact}
             </a>
           </li>
         </ul>
+        <Link href="/" locale='es'>es</Link>
+        <Link href="/" locale='en'>en</Link>
       </nav>
     </header>
   );

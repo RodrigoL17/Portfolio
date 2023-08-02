@@ -1,0 +1,17 @@
+{
+  "Index": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+
+  "IntroSection": {
+    "greeting": "Hola👋, soy",
+    "name": "Rodrigo Lezama",
+    "profession": "Desarrollador Web Full-Stack",
+    "resume": "Curriculum"
+  },
+  "ProjectSection":{
+    "title":"Proyectos"
+  }
+}
