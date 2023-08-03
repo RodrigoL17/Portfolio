@@ -223,7 +223,7 @@ const ScssIcon = ({ height, fill }) => {
   );
 };
 
-const SunIncon = () => {
+const SunIcon = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
       <path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z" />
@@ -233,63 +233,68 @@ const SunIncon = () => {
 
 const SpainFlagIcon = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 44.8" width={24} height={24}>
-    <path
-      d="M.354 33.943h70v11.2h-70z"
-      style={{
-        fill: "#c60b1e",
-      }}
-      transform="translate(-.354 -.343)"
-    />
-    <path
-      d="M.354 11.543h70v22.4h-70z"
-      style={{
-        fill: "#ffc400",
-      }}
-      transform="translate(-.354 -.343)"
-    />
-    <path
-      d="M.354.343h70v11.2h-70z"
-      style={{
-        fill: "#c60b1e",
-      }}
-      transform="translate(-.354 -.343)"
-    />
-  </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 70 44.8"
+      width={24}
+      height={24}
+    >
+      <path
+        d="M.354 33.943h70v11.2h-70z"
+        style={{
+          fill: "#c60b1e",
+        }}
+        transform="translate(-.354 -.343)"
+      />
+      <path
+        d="M.354 11.543h70v22.4h-70z"
+        style={{
+          fill: "#ffc400",
+        }}
+        transform="translate(-.354 -.343)"
+      />
+      <path
+        d="M.354.343h70v11.2h-70z"
+        style={{
+          fill: "#c60b1e",
+        }}
+        transform="translate(-.354 -.343)"
+      />
+    </svg>
   );
 };
 
 const USFlagIcon = () => {
-  return(
+  return (
     <svg
-    xmlns="http://www.w3.org/2000/svg"
-    overflow="visible"
-    viewBox="0 0 341.59 203.057"
-    height={24}
-    width={24}
-  >
-    <switch>
-      <g>
-        <path fill="#FFF" d="M.063 0h341.47v202.17H.063z" />
-        <path fill="#13135F" d="M.063 20v56.5h96z" />
-        <path fill="red" d="M109.91 76.5h19.65L.063 0v12z" />
-        <path fill="#12145B" d="M37.916 0 147.56 67.486V0z" />
-        <path fill="#13135F" d="M341.56 182v-56h-95z" />
-        <path fill="red" d="M232.72 126h-19.66l128.5 76.12V190z" />
-        <path fill="#12145B" d="m304.68 203-109.64-67.49V203z" />
-        <path fill="#13135F" d="M341.56 20.513V76.5l-95-.068z" />
-        <path fill="red" d="M195.06 76.5h22.3L341.56 0h-22.55z" />
-        <path fill="#12145B" d="M303.75 0 195.06 66.986V0z" />
-        <path fill="#13135F" d="M.071 182.48v-56.5h96z" />
-        <path fill="red" d="M147.52 125.97h-22.3L0 203.06h22.572z" />
-        <path fill="#12145B" d="m37.87 202.97 109.65-67.49v67.49z" />
-        <path fill="red" d="M156.72 0h28.874v203H156.72z" />
-        <path fill="red" d="M.063 85.252h341.53v32.672H.063z" />
-      </g>
-    </switch>
-  </svg>
-  )
-}
+      xmlns="http://www.w3.org/2000/svg"
+      overflow="visible"
+      viewBox="0 0 341.59 203.057"
+      height={24}
+      width={24}
+    >
+      <switch>
+        <g>
+          <path fill="#FFF" d="M.063 0h341.47v202.17H.063z" />
+          <path fill="#13135F" d="M.063 20v56.5h96z" />
+          <path fill="red" d="M109.91 76.5h19.65L.063 0v12z" />
+          <path fill="#12145B" d="M37.916 0 147.56 67.486V0z" />
+          <path fill="#13135F" d="M341.56 182v-56h-95z" />
+          <path fill="red" d="M232.72 126h-19.66l128.5 76.12V190z" />
+          <path fill="#12145B" d="m304.68 203-109.64-67.49V203z" />
+          <path fill="#13135F" d="M341.56 20.513V76.5l-95-.068z" />
+          <path fill="red" d="M195.06 76.5h22.3L341.56 0h-22.55z" />
+          <path fill="#12145B" d="M303.75 0 195.06 66.986V0z" />
+          <path fill="#13135F" d="M.071 182.48v-56.5h96z" />
+          <path fill="red" d="M147.52 125.97h-22.3L0 203.06h22.572z" />
+          <path fill="#12145B" d="m37.87 202.97 109.65-67.49v67.49z" />
+          <path fill="red" d="M156.72 0h28.874v203H156.72z" />
+          <path fill="red" d="M.063 85.252h341.53v32.672H.063z" />
+        </g>
+      </switch>
+    </svg>
+  );
+};
 
 export {
   CSSIcon,
@@ -307,7 +312,7 @@ export {
   NodeIcon,
   ReactIcon,
   ScssIcon,
-  SunIncon,
+  SunIcon,
   SpainFlagIcon,
-  USFlagIcon
+  USFlagIcon,
 };

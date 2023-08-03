@@ -1,9 +1,10 @@
 "use client";
 import Link from "next-intl/link";
 import { SpainFlagIcon, USFlagIcon } from "./icons";
+import ThemeChanger from "./themeChanger";
 
 export default function LandingHeader({ home, projects, contact, locale }) {
-  const changeLenguage = () => {};
+ 
 
   return (
     <header
@@ -31,14 +32,23 @@ export default function LandingHeader({ home, projects, contact, locale }) {
               {contact}
             </a>
           </li>
-        <div className="flex gap-2 ml-10">
-          <Link className={`${locale === "en" && "grayscale"}`} href="/" locale="es">
-            <SpainFlagIcon />
-          </Link>
-          <Link className={`${locale === "es" && "grayscale"}`} href="/" locale="en">
-            <USFlagIcon />
-          </Link>
-        </div>
+          <div className="flex gap-2 ml-10">
+            <Link
+              className={`${locale === "es" && "grayscale"}`}
+              href="/"
+              locale="es"
+            >
+              <SpainFlagIcon />
+            </Link>
+            <Link
+              className={`${locale === "en" && "grayscale"}`}
+              href="/"
+              locale="en"
+            >
+              <USFlagIcon />
+            </Link>
+          </div>
+          <ThemeChanger/>
         </ul>
       </nav>
     </header>

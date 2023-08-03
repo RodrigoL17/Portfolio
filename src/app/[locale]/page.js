@@ -1,7 +1,7 @@
-import ContactSection from "@/components/contactSection";
-import IntroSection from "@/components/introSection";
-import LandingHeader from "@/components/landingHeader";
-import ProjectsSection from "@/components/projectsSection";
+import ContactSection from "../../components/contactSection";
+import IntroSection from "../../components/introSection";
+import LandingHeader from "../../components/landingHeader";
+import ProjectsSection from "../../components/projectsSection";
 import { useTranslations } from "next-intl";
 import { getLocale } from "next-intl/server";
 

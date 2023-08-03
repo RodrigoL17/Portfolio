@@ -1,13 +1,22 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 import MessageSubmitBtn from "./messageSubmitBtn";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 
-
-export default function ContactForm({title,paragraph,name,email,tel,subject,subjectPlaceHolder,message,messagePlaceHolder,sendMessage}) {
-
+export default function ContactForm({
+  title,
+  paragraph,
+  name,
+  email,
+  tel,
+  subject,
+  subjectPlaceHolder,
+  message,
+  messagePlaceHolder,
+  sendMessage,
+}) {
   const INITIAL_STATE = {
     name: "",
     email: "",
@@ -71,7 +80,7 @@ export default function ContactForm({title,paragraph,name,email,tel,subject,subj
           {title}
         </h2>
         <p className="mb-8 lg:mb-16  text-center font-medium text-gray-500 dark:text-gray-400 sm:text-xl">
-         {paragraph}
+          {paragraph}
         </p>
         <form onSubmit={sendEmail} className="space-y-8">
           <div>
@@ -163,7 +172,7 @@ export default function ContactForm({title,paragraph,name,email,tel,subject,subj
               value={userForm.message}
             ></textarea>
           </div>
-          <MessageSubmitBtn sendMessage={sendMessage}/>
+          <MessageSubmitBtn sendMessage={sendMessage} />
         </form>
       </div>
     </section>

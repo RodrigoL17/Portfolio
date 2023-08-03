@@ -1,4 +1,4 @@
-export default function MessageSubmitBtn({sendMessage}) {
+export default function MessageSubmitBtn({ sendMessage }) {
   return (
     <button
       type="submit"

@@ -2,6 +2,7 @@ import "./globals.css";
 import { Encode_Sans } from "next/font/google";
 import { useLocale } from "next-intl";
 import { notFound } from "next/navigation";
+import Providers from "../providers";
 
 const encodeSans = Encode_Sans({ subsets: ["latin"] });
 
@@ -16,9 +17,12 @@ export default function RootLayout({ children, params }) {
   if (params.locale !== locale) {
     notFound();
   }
+
   return (
-    <html lang={locale} className="light">
-      <body className={encodeSans.className}>{children}</body>
+    <html lang={locale}>
+      <body className={encodeSans.className}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
