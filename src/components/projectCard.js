@@ -13,14 +13,14 @@ export default function ProjectCard({
   return (
     <div
       key={title}
-      className="max-w-[20rem] bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 hover:shadow-[1px_1px_18px_10px_rgba(255,255,255,0.4)] hover:scale-105 transition-all ease-in duration-200"
+      className="max-w-[20rem] bg-white border border-gray-200 rounded-lg dark:bg-slate-800 dark:border-slate-700 hover:shadow-[1px_1px_18px_10px_rgba(255,255,255,0.4)] hover:scale-105 transition-all ease-in duration-200 "
     >
       <a
         {...(urlLink !== "" ? { href: urlLink, target: "_blank" } : {})}
-        className="flex justify-center border-b-2 border-slate-200"
+        className="flex justify-center border-b-2 border-slate-200 dark:border-slate-600"
       >
         <Image
-          className="rounded-t-lg h-[180px] object-contain"
+          className="rounded-t-lg h-[180px] object-contain bg-gray-400"
           src={imgSrc}
           alt=""
           width={350}

@@ -6,23 +6,25 @@ export default function ThemeChanger() {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
-    useEffect(() => {
-       setMounted(true);
-    }, []);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
-    if(!mounted) {
-        return null
-    }
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <div className="flex ml-5">
-      {theme}
-      <button onClick={() => setTheme("light")}>
-        <SunIcon />
-      </button>
-      <button onClick={() => setTheme("dark")}>
-        <MoonIcon />
-      </button>
+      {theme === "light" ? (
+        <button onClick={() => setTheme("dark")}>
+          <MoonIcon />
+        </button>
+      ) : (
+        <button onClick={() => setTheme("light")}>
+          <SunIcon fill={"white"} />
+        </button>
+      )}
     </div>
   );
 }

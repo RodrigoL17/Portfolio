@@ -9,7 +9,7 @@ export default function LandingHeader({ home, projects, contact, locale }) {
   return (
     <header
       id="landing-header"
-      className="px-3 py-5 flex items-center fixed top-0 w-full z-50 bg-slate-100/50 backdrop-blur-lg"
+      className="px-3 py-5 flex items-center fixed top-0 w-full z-50 bg-slate-200/50 backdrop-blur-lg dark:bg-slate-700/50"
     >
       <nav className="flex items-center justify-around w-full">
         <div>

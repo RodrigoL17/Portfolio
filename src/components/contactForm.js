@@ -74,7 +74,7 @@ export default function ContactForm({
   };
 
   return (
-    <section className="bg-white dark:bg-gray-900 rounded-lg shadow-[1px_1px_32px_16px_rgba(0,0,0,0.2)]">
+    <section className="bg-white dark:bg-gray-900 rounded-lg shadow-[1px_1px_32px_16px_rgba(0,0,0,0.2)] dark:shadow-[1px_1px_32px_16px_rgba(240,240,240,0.2)]">
       <div className="py-8 lg:py-16 px-8 mx-auto max-w-screen-md">
         <h2 className="mb-4 text-6xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
           {title}

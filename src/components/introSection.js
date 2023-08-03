@@ -8,7 +8,7 @@ export default function IntroSection() {
   return (
     <section
       id="intro"
-      className="h-screen w-full bg-slate-100 flex items-center justify-center gap-[100px] dark:bg-black"
+      className="h-screen w-full bg-slate-100 flex items-center justify-center gap-[100px] dark:bg-slate-900"
     >
       <div className="gap-3 flex flex-col">
         <div className="flex flex-col mb-6 justify-start ">
@@ -18,7 +18,7 @@ export default function IntroSection() {
           </p>
           <p className="text-5xl -indent-1">{t("profession")}</p>
         </div>
-        <div className="flex gap-10 items-center [&>a]:flex [&>a]:items-center [&>a]:gap-2 [&>a]:border-black [&>a]:border-solid [&>a]:border-[1px] [&>a]:rounded-lg [&>a]:py-2 [&>a]:px-4 [&>a]:text-[18px] [&>a]:bg-[#0c75ca] [&>a]:font-normal [&>a]:text-white hover:[&>a]:bg-[#2f4eff] [&>a]:shadow-[4px_4px_8px_rgba(0,0,0,0.6)]">
+        <div className="flex gap-10 items-center [&>a]:flex [&>a]:items-center [&>a]:gap-2 [&>a]:border-black [&>a]:border-solid [&>a]:border-[1px] [&>a]:rounded-lg [&>a]:py-2 [&>a]:px-4 [&>a]:text-[18px] [&>a]:bg-[#0c75ca] [&>a]:font-normal [&>a]:text-white hover:[&>a]:bg-[#2f4eff] [&>a]:shadow-[4px_4px_8px_rgba(0,0,0,0.6)] [&>a]:dark:bg-[#2f4eff] dark:hover:[&>a]:bg-[#0c75ca]">
           <a
             {...(getLocale() === "es"
               ? { href: "RodrigoLezama-DesarrolladorWebFullStack.pdf" }
@@ -27,11 +27,11 @@ export default function IntroSection() {
           >
             {t("resume")} <DownloadIcon height={"1em"} fill={"currentColor"} />
           </a>
-          <a className="" href="https://github.com/RodrigoL17" target="_blank">
+          <a  href="https://github.com/RodrigoL17" target="_blank">
             GitHub <GitHubIcon height={"1em"} fill={"currentColor"} />
           </a>
           <a
-            className=""
+            
             href="https://www.linkedin.com/in/rodrigo-lezama-31a650224/"
             target="_blank"
           >
