@@ -11,7 +11,83 @@
     "profession": "Desarrollador Web Full-Stack",
     "resume": "Curriculum"
   },
-  "ProjectSection":{
-    "title":"Proyectos"
+  "ProjectSection": {
+    "title": "Proyectos",
+    "ECB": {
+      "title": "Simulador E-commerce (Back-End)",
+      "description": "Proyecto Final 'Curso Back-End. CoderHouse' - Simulador E-commerce Back-End",
+      "technologies": "html,css,js,node,mongodb,express,handlebars",
+      "githubLink": "https://github.com/RodrigoL17/PracticaIntegradora-BackEnd",
+      "urlLink": "",
+      "imgSrc": "/e-commerce-back-end.png"
+    },
+    "CSSGG": {
+      "title": "CSS-Gradient-Generator",
+      "description": "Proyecto personal - Una copia de la página CSS-Gradient-Generator, que nos permite obtener los gradientes que deseemos!",
+      "technologies": "html,css,js,react,nextJs",
+      "githubLink": "https://github.com/RodrigoL17/css-gradient-generator",
+      "urlLink": "https://css-gradient-generator-ten.vercel.app/",
+      "imgSrc": "/css-gradient-portada.png"
+    },
+    "CAL": {
+      "title": "Calculadora",
+      "description": "Proyecto personal - Calculadora, haz todos tus cálculos sin fallas y conviertete en un As de las matemáticas!",
+      "technologies": "html,css,js,react",
+      "githubLink": "https://github.com/RodrigoL17/Calculator",
+      "urlLink": "https://calculator-one-lime-52.vercel.app/",
+      "imgSrc": "/calculadora-portada.png"
+    },
+    "TTT": {
+      "title": "Ta-Te-Ti",
+      "description": "Proyecto personal - Ta-Te-Ti, legendario juego de estratégia, increible para jugar con un amigo... y dejarlo en ridículo!",
+      "technologies": "html,css,js,react",
+      "githubLink": "https://github.com/RodrigoL17/Tic-Tac-Toe",
+      "urlLink": "https://tic-tac-toe-rodrigol17.vercel.app/",
+      "imgSrc": "/ta-te-ti-portada.png"
+    },
+    "TDA": {
+      "title": "To-Do-App",
+      "description": "Proyecto personal - To-Do app donde podras ordenar todas tus tareas, y nunca te olvidarás de ellas otra vez!",
+      "technologies": "html,css,js,react",
+      "githubLink": "https://github.com/RodrigoL17/To-Do-List",
+      "urlLink": "https://to-do-list-rodrigol17.vercel.app/",
+      "imgSrc": "/to-do-app-portada.png"
+    },
+    "ECR": {
+      "title": "Simulador E-commerce (ReactJS)",
+      "description": "Proyecto Final 'ReactJS. CoderHouse' - Simulador E-commerce hecho con ReactJS",
+      "technologies": "html,css,js,react",
+      "githubLink": "https://github.com/RodrigoL17/E-ccommerce-React-Final-Project",
+      "urlLink": "https://e-ccommerce-react-final-project.vercel.app/",
+      "imgSrc": "/e-commerce-react-portada.png"
+    },
+    "ECJS": {
+      "title": "Simulador E-commerce (JS)",
+      "description": "Proyecto Final 'JavaScript. CoderHouse' - Simulador E-commerce hecho con JavaScript",
+      "technologies": "html,css,js",
+      "githubLink": "https://github.com/RodrigoL17/E-commerce.JS",
+      "urlLink": "",
+      "imgSrc": "/e-commerce-js-portada.png"
+    },
+    "PNE": {
+      "title": "PsicoNeuroEspiritual",
+      "description": "Proyecto Final 'Web Developer. CoderHouse' - Echa un vistazo a los consultorios y profesionales, y hazles una consulta!",
+      "technologies": "html,css,scss",
+      "githubLink": "https://github.com/RodrigoL17/PsicoNeuroEspiritual",
+      "urlLink": "",
+      "imgSrc": "/psico-neuro-espiritual-portada.png"
+    }
+  },
+  "ContactSection": {
+    "title": "Contacto",
+    "paragraph": "¡Si tienes un proyecto increíble 🚀 o una gran oferta de trabajo 👷‍♂️, ¡Contáctame y te responderé tan pronto como sea posible 📞!",
+    "name": "Nombre",
+    "email": "Email",
+    "tel": "Número Telefónico",
+    "subject": "Asunto",
+    "subjectPlaceHolder": "Déjame saber cómo puedo ayudarte.",
+    "message": "Tu Mensaje",
+    "messagePlaceHolder": "Deja un comentario...",
+    "sendMessage": "Enviar mensaje"
   }
 }

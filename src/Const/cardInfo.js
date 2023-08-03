@@ -1,8 +1,6 @@
-
-
 export const INFO = [
   {
-    title: "E-commerce-simulation (Back-End)",
+    title: "title",
     description:
       `Final project 'Back-End Course. CoderHouse' - E-commerce simulation Back-End`,
     technologies: ["html", "css", "js", "node", "mongodb", "express", "handlebars"],

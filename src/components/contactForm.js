@@ -1,11 +1,13 @@
-"use client";
+"use client"
 
 import { useState } from "react";
 import MessageSubmitBtn from "./messageSubmitBtn";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 
-export default function ContactForm() {
+
+export default function ContactForm({title,paragraph,name,email,tel,subject,subjectPlaceHolder,message,messagePlaceHolder,sendMessage}) {
+
   const INITIAL_STATE = {
     name: "",
     email: "",
@@ -66,11 +68,10 @@ export default function ContactForm() {
     <section className="bg-white dark:bg-gray-900 rounded-lg shadow-[1px_1px_32px_16px_rgba(0,0,0,0.2)]">
       <div className="py-8 lg:py-16 px-8 mx-auto max-w-screen-md">
         <h2 className="mb-4 text-6xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
-          Contact
+          {title}
         </h2>
         <p className="mb-8 lg:mb-16  text-center font-medium text-gray-500 dark:text-gray-400 sm:text-xl">
-          If you have an amazing project 🚀 or a great job offer 👷‍♂️! Get in
-          touch with me, and I'll respond as soon as possible 📞!"
+         {paragraph}
         </p>
         <form onSubmit={sendEmail} className="space-y-8">
           <div>
@@ -78,7 +79,7 @@ export default function ContactForm() {
               htmlFor="name"
               className="block mb-2 text-sm font-semibold text-gray-900 dark:text-gray-300"
             >
-              Name
+              {name}
             </label>
             <input
               onChange={onChangeInput}
@@ -96,7 +97,7 @@ export default function ContactForm() {
               htmlFor="email"
               className="block mb-2 text-sm font-semibold text-gray-900 dark:text-gray-300"
             >
-              Email
+              {email}
             </label>
             <input
               onChange={onChangeInput}
@@ -114,7 +115,7 @@ export default function ContactForm() {
               htmlFor="phone-number"
               className="block mb-2 text-sm font-semibold text-gray-900 dark:text-gray-300"
             >
-              Phone number
+              {tel}
             </label>
             <input
               onChange={onChangeInput}
@@ -122,7 +123,7 @@ export default function ContactForm() {
               id="phone-number"
               name="tel"
               className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-              placeholder="+54 9 11 3596 4530"
+              placeholder="+54 9 11 2222 3333"
               value={userForm.tel}
               required
             />
@@ -132,7 +133,7 @@ export default function ContactForm() {
               htmlFor="subject"
               className="block mb-2 text-sm font-semibold text-gray-900 dark:text-gray-300"
             >
-              Subject
+              {subject}
             </label>
             <input
               onChange={onChangeInput}
@@ -140,7 +141,7 @@ export default function ContactForm() {
               id="subject"
               name="subject"
               className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-              placeholder="Let me know how i can help you"
+              placeholder={subjectPlaceHolder}
               value={userForm.subject}
               required
             />
@@ -150,7 +151,7 @@ export default function ContactForm() {
               htmlFor="message"
               className="block mb-2 text-sm font-semibold text-gray-900 dark:text-gray-400"
             >
-              Your message
+              {message}
             </label>
             <textarea
               onChange={onChangeInput}
@@ -158,11 +159,11 @@ export default function ContactForm() {
               rows="6"
               name="message"
               className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-              placeholder="Leave a comment..."
+              placeholder={messagePlaceHolder}
               value={userForm.message}
             ></textarea>
           </div>
-          <MessageSubmitBtn />
+          <MessageSubmitBtn sendMessage={sendMessage}/>
         </form>
       </div>
     </section>
