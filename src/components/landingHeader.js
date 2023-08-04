@@ -1,7 +1,10 @@
 "use client";
 import Link from "next-intl/link";
+import Image from "next/image";
 import { SpainFlagIcon, USFlagIcon } from "./icons";
 import ThemeChanger from "./themeChanger";
+
+
 
 export default function LandingHeader({ home, projects, contact, locale }) {
  
@@ -12,23 +15,22 @@ export default function LandingHeader({ home, projects, contact, locale }) {
       className="px-3 py-5 flex items-center fixed top-0 w-full z-50 bg-slate-200/50 backdrop-blur-lg dark:bg-slate-700/50"
     >
       <nav className="flex items-center justify-around w-full">
-        <div>
-          logo
-          {/* <Image src="#" alt=""/> */}
+        <div className=" w-[45px]">
+          <Image src="/logo.png" alt="logo empresarial" width={1000} height={1000}/>
         </div>
         <ul className="flex">
           <li>
-            <a className="py-3 px-5 font-bold" href="#intro">
-              {home}
+            <a className="py-3 px-5 font-bold hover:underline hover:decoration-solid hover:underline-offset-8 decoration-[3px]" href="#intro">
+              {home} 
             </a>
           </li>
           <li>
-            <a className="py-3 px-5 font-bold" href="#projects">
+            <a className="py-3 px-5 font-bold hover:underline hover:decoration-solid hover:underline-offset-8 decoration-[3px]" href="#projects">
               {projects}
             </a>
           </li>
           <li>
-            <a className="py-3 px-5 font-bold" href="#contact">
+            <a className="py-3 px-5 font-bold hover:underline hover:decoration-solid hover:underline-offset-8 decoration-[3px]" href="#contact">
               {contact}
             </a>
           </li>

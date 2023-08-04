@@ -22,7 +22,7 @@ export default function ThemeChanger() {
         </button>
       ) : (
         <button onClick={() => setTheme("light")}>
-          <SunIcon fill={"white"} />
+          <SunIcon fill={"#ffc400"} />
         </button>
       )}
     </div>
